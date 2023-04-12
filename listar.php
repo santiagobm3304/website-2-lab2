@@ -10,7 +10,7 @@
 ?>
 
 <!DOCTYPE html>
-html lang="es">
+<html lang="es">
   <head>
     <title>Pagina Principal</title>
     <meta charset="utf-8">
@@ -41,24 +41,24 @@ html lang="es">
     </div>
     <h1>Listado de personas</h1>
 
-    <table>
+    <table class="table">
         <tr>
-            <th>ID</th>
-            <th>Documento</th>
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Email</th>
-            <th>Celular</th>
+            <th scope="col">ID</th>
+            <th scope="col">Documento</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Email</th>
+            <th scope="col">Celular</th>
 
         </tr>
         <?php while ($fila = pg_fetch_assoc($resultado)) { ?>
             <tr>
-                <td><?php echo $fila['idpersona']; ?></td>
-                <td><?php echo $fila['documento']; ?></td>
-                <td><?php echo $fila['nombre']; ?></td>
-                <td><?php echo $fila['apellido']; ?></td>
-                <td><?php echo $fila['direccion']; ?></td>
-                <td><?php echo $fila['celular']; ?></td>
+                <td scope="row"><?php echo $fila['idpersona']; ?></td>
+                <td scope="row"><?php echo $fila['documento']; ?></td>
+                <td scope="row"><?php echo $fila['nombre']; ?></td>
+                <td scope="row"><?php echo $fila['apellido']; ?></td>
+                <td scope="row"><?php echo $fila['direccion']; ?></td>
+                <td scope="row"><?php echo $fila['celular']; ?></td>
             </tr>
         <?php } ?>
     </table>
