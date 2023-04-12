@@ -39,7 +39,7 @@
         <a class="p-2 text-dark" href="#">Eliminar</a>
       </nav>
     </div>
-    <h1>Listado de personas</h1>
+    <h1 class="jumbotron-heading">Listado de personas</h1>
 
     <table class="table">
         <tr>
