@@ -9,6 +9,10 @@
 
 	$db = pg_connect("$host $port $dbname $user $password");
     
+	if(!$db){
+		die("Conexión Fallida")
+	}
+
 	return $db;
 }
 ?>
