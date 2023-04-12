@@ -3,7 +3,7 @@
 
     $pru = conexion();
 
-    $sql = "SELECT idpersona, documento, nombre, apellido, diraccion, celular FROM persona";
+    $sql = "SELECT idpersona, documento, nombre, apellido, direccion, celular FROM persona";
     $resultado = pg_query($pru, $sql);
 
     pg_close($pru);
