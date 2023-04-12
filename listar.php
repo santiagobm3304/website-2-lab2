@@ -1,12 +1,12 @@
 <?php
     include("conexion.php");
 
-    $con = conexion();
+    $pru = conexion();
 
-    $con = "SELECT idpersona, documento, nombre, apellido, diraccion, celular FROM persona";
-    $resultado = pg_query($con, $sql);
+    $sql = "SELECT idpersona, documento, nombre, apellido, diraccion, celular FROM persona";
+    $resultado = pg_query($pru, $sql);
 
-    pg_close($db);
+    pg_close($pru);
 ?>
 
 <!DOCTYPE html>
