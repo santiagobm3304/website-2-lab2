@@ -1,10 +1,10 @@
 <?php
     include("conexion.php");
 
-    $db = conexion();
+    $con = conexion();
 
-    $sql = "SELECT idpersona, documento, nombre, apellido, diraccion, celular FROM persona";
-    $resultado = pg_query($db, $sql);
+    $con = "SELECT idpersona, documento, nombre, apellido, diraccion, celular FROM persona";
+    $resultado = pg_query($con, $sql);
 
     pg_close($db);
 ?>
